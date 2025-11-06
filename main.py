@@ -191,10 +191,7 @@ def switch_sound():
     if not sound_on and active_music:
         active_music.stop()
     elif sound_on:
-        if is_menu:
-            play_music("menu_music")
-        elif is_running:
-            play_music("game_music")
+        play_music("menu_music")
 
 
 def build_level():
